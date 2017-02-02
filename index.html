@@ -10,10 +10,33 @@
   <body>
 <div class="container">
   <div class="gameBox">
-    <span>History Trivia Word Search</span>
-    <div class="QuestionContainer">
-      <p>Question goes here</p>
-      <button>Shuffle</button>
+    <span>Country Trivia Word Search</span>
+    <div id="QuestionContainer">
+      <p id="question"></p>
+      <button id="startButton">Start playing</button>
+      <button id="next" class="active">Next</button>
+      </div>
+      <div id="lostGame"class="hidden">
+        You ran out of time!
+      <button id="PlayAgainButton">Play Again</button>
+      </div>
+      <div id="winGame" class="hidden">
+        Amazing! You finished all levels before the time ran out!
+        <button id="PlayAgainWin">Play Again</button>
+      </div>
+      <div id="countryList" class="active">
+        <ul>
+          <li id="6">Singapore</li>
+          <li id="9">Malta</li>
+          <li id="10">Mongolia</li>
+          <li id="5">Russia</li>
+          <li id="8">Monaco</li>
+          <li id="1">USA</li>
+          <li id="2">Nauru</li>
+          <li id="7">China</li>
+          <li id="4">Canada</li>
+          <li id="3">France</li>
+        </ul>
       </div>
       <div id="timer_div" class="active">
       </div>
@@ -23,7 +46,7 @@
         </tbody>
       </table>
       </div>
-
+    <div class="playerAnswer"></div>
   </div>
 </div>
 
