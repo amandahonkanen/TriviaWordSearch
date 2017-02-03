@@ -51,6 +51,7 @@ h1 {
   border-style: none;
   border-radius: 5px;
   color: white;
+
 }
 
 #instButton {
@@ -83,6 +84,9 @@ h1 {
   color: white;
 }
 
+#PlayAgainWin, #PlayAgainButton, #instButton, #startButton, #next: hover {
+  color: black;
+}
 
 td {
   border: 1px solid black;
