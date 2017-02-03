@@ -206,10 +206,5 @@ TriviaWordSearch.prototype.resetWin = function(){
   $('*').removeClass('found');
 
 
-
-
-
-
-
   console.log("RESET");
 };

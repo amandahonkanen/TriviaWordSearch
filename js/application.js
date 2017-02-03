@@ -8,6 +8,7 @@ $(document).ready(function(){
 
   $('#startButton').on('click', wrapper);
   function wrapper(){
+    $('#title').addClass("hidden");
     $('#instButton').addClass('hidden');
     $('#next').toggleClass("active");
     $('#startButton').toggleClass("active");

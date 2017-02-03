@@ -1,10 +1,20 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/09/20/09/16/globe-1682097_1280.jpg");
+}
 .container {
+  background-color: black;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: Helvetica;
 }
 
 .gameBox {
   width: 600px;
   height: 500px;
-  background-image: url("https://cdn.pixabay.com/photo/2016/09/20/09/16/globe-1682097_1280.jpg"); width: 600px; height: 500px;
+  /*background-image: url("https://cdn.pixabay.com/photo/2016/09/20/09/16/globe-1682097_1280.jpg"); width: 600px; height: 500px;*/
   text-align: center;
   position: absolute;
 }
@@ -22,7 +32,8 @@
 }
 
 
-button {
+
+#next {
   float: right;
   height: 30px;
   width: 60px;
@@ -31,6 +42,47 @@ button {
   border-style: none;
   border-radius: 5px;
 }
+
+#startButton {
+  height: 50px;
+  width: 80px;
+  margin: 10px;
+  background-color: #ff944d;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#instButton {
+  height: 50px;
+  width: 80px;
+  margin: 10px;
+  background-color: #ff944d;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#PlayAgainButton {
+  height: 50px;
+  width: 80px;
+  margin: 10px;
+  background-color: #ff944d;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+
+#PlayAgainWin {
+  height: 50px;
+  width: 80px;
+  margin: 10px;
+  background-color: #ff944d;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+}
+
 
 td {
   border: 1px solid black;
@@ -100,12 +152,14 @@ ul {
   color: white;
   font-size: 40px;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 #instructions {
   height: 400px;
-  width: 400px;
+  width: 300px;
+  margin-left: 10px;
   font-size: 16px;
   color: #fed49f;
+  text-align: center;
 }
