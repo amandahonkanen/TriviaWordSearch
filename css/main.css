@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Users/amandahonkanen/assignments/week3/GameProject/img/globe.jpg");
+  background-image: url("../img/globe.jpg");
 }
 .container {
   background-color: black;
