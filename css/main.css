@@ -163,3 +163,11 @@ ul {
   color: #fed49f;
   text-align: center;
 }
+
+#playerAnswer {
+  color: white;
+}
+
+.appear {
+  display: none
+}

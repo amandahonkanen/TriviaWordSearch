@@ -130,12 +130,11 @@ TriviaWordSearch.prototype.storeAnswer = function() {
       self.playerAnswer += ($(this).html());
 
       $(this).toggleClass("chosen");
-      console.log(self.playerAnswer);
-    }
 
+    }
+// $('#playerAnswer').append(self.playerAnswer).html();
   });
-  printedAnswer = self.playerAnswer;
-$(self.playerAnswer).html();
+
 };
 
 

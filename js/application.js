@@ -4,6 +4,7 @@ $(document).ready(function(){
 
   $('#instButton').on('click', function(){
     $('#instructions').toggleClass('hidden');
+    $('#startButton').toggleClass('hidden');
   });
 
   $('#startButton').on('click', wrapper);
