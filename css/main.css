@@ -14,7 +14,6 @@ h1 {
 .gameBox {
   width: 600px;
   height: 500px;
-  /*background-image: url("https://cdn.pixabay.com/photo/2016/09/20/09/16/globe-1682097_1280.jpg"); width: 600px; height: 500px;*/
   text-align: center;
   position: absolute;
 }

@@ -69,7 +69,7 @@ rows = [];
 cols = null;
   for (var i=0; i <=8; i++){
     cols = "";
-    var alphabet = 'USANAURUFRANCECANADASINGAPOREMALTAMONGOLIARUSSIAMONACOCHINA';
+    var alphabet = 'USANAURUFRANCECANADASINGAPOREMALTAMONGOLIARUSSIAMONACOCHINAPPDTTGGF';
     for(var h=0; h <= 8; h++){
       var random = parseInt(Math.random()* alphabet.length);
         var letter = alphabet.charAt(random);
