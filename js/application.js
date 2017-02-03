@@ -3,11 +3,12 @@ var trivia = new TriviaWordSearch();
 $(document).ready(function(){
 
   $('#instButton').on('click', function(){
-    ('#instructionsHTML').toggleClass('hidden');
+    $('#instructions').toggleClass('hidden');
   });
 
   $('#startButton').on('click', wrapper);
   function wrapper(){
+    $('#instButton').addClass('hidden');
     $('#next').toggleClass("active");
     $('#startButton').toggleClass("active");
     $('#countryList').toggleClass("active");
