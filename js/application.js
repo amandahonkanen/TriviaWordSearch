@@ -2,6 +2,9 @@ var trivia = new TriviaWordSearch();
 
 $(document).ready(function(){
 
+  $('#instButton').on('click', function(){
+    ('#instructionsHTML').toggleClass('hidden');
+  });
 
   $('#startButton').on('click', wrapper);
   function wrapper(){
@@ -54,6 +57,7 @@ else {
 });
 
 $('#PlayAgainWin').on('click', function(){
+  $('instButton').toggleClass('hidden');
   $('#next').toggleClass("active");
   $('#winGame').toggleClass("hidden");
   $('#countryList').toggleClass("active");
@@ -61,18 +65,8 @@ $('#PlayAgainWin').on('click', function(){
   trivia.createGrid();
   trivia.storeAnswer();
   trivia.createQuestionElement();
-
-if ($('#timer_div').attr("class") === "active"){
-    trivia.timer();
-    $('#timer_div').toggleClass("active");
-}
-
-
-else {
-    console.log("addSencondsToTimer");
-    trivia.addSecondstoTimer();
-  }
-
+  trivia.timer();
+  $('#timer_div').toggleClass("active");
 });
 
 

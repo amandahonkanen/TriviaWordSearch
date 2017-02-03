@@ -85,12 +85,12 @@ cols = null;
 
 TriviaWordSearch.prototype.timer = function () {
   var self = this;
-  var interval = setInterval(function() {
+  self.interval = setInterval(function() {
       document.getElementById('timer_div').innerHTML = self.timeRemaining--;
       if (self.timeRemaining < 0)
       {
-          clearInterval(interval);
-          trivia.resetLose();
+        trivia.resetLose();
+        clearInterval(self.interval);
 
       }
   }, 1000);
@@ -167,6 +167,9 @@ TriviaWordSearch.prototype.nextQuestion = function(){
   }
   else {
     trivia.resetWin();
+
+
+
   }
 };
 
@@ -181,14 +184,18 @@ TriviaWordSearch.prototype.resetLose = function(){
   // $('#startButton').toggleClass("active");
   $('#timer_div').toggleClass("active");
   $('#lostGame').toggleClass("hidden");
+  $('*').removeClass('found');
+
 
   console.log("RESET");
 };
 
 TriviaWordSearch.prototype.resetWin = function(){
+  console.log('hello reset');
   this.currentQuestion = 0;
   this.playerAnswer = '';
-  this.timeRemaining = 30;
+  this.timeRemaining = 20;
+  clearInterval(this.interval);
   $('td').remove();
   $('#question').text('');
   $('#countryList').toggleClass("active");
@@ -196,6 +203,13 @@ TriviaWordSearch.prototype.resetWin = function(){
   // $('#startButton').toggleClass("active");
   $('#timer_div').toggleClass("active");
   $('#winGame').toggleClass("hidden");
+  $('*').removeClass('found');
+
+
+
+
+
+
 
   console.log("RESET");
 };

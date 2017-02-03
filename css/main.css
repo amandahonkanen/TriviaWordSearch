@@ -62,6 +62,7 @@ ul {
   list-style: none;
   float: left;
   color: white;
+  margin-top: 50px;
 }
 
 #countryList {
@@ -100,4 +101,11 @@ ul {
   font-size: 40px;
   margin-top: 50px;
   margin-left: 50px;
+}
+
+#instructionsHTML {
+  height: 400px;
+  width: 400px;
+  font-size: 14px;
+  color: #fed49f;
 }
